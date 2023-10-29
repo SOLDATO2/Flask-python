@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Todos os Livros</h1>
+    <ul>
+        {% for livro in livros %}
+        <li>Id: {{livro.id}} || Nome: {{ livro.NomeLivro }} || Autor: {{ livro.AutorLivro }} || Data de Publicação: {{ livro.DataPublicacao }} || Quantidade: {{ livro.QuantidadeLivro }}</li>
+        <a href="/atualizar/{{livro.id}}">Atualizar</a>
+        <a href="/excluir/{{livro.id}}">Excluir</a>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Livro Por Id</h1>
+    {% for id in livros %}
+    <ul>
+        <li>Id: {{id.id}} || Nome: {{ id.NomeLivro }} || Autor: {{ id.AutorLivro }} || Data de Publicação: {{ id.DataPublicacao }} || Quantidade: {{ id.QuantidadeLivro }}</li>
+        <a href="/atualizar/{{id.id}}">Atualizar</a>
+        <a href="/excluir/{{id.id}}">Excluir</a>
+        {% endfor %}
+    </ul>
+</body>
+</html>

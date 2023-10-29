@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cadastrar Livro</h2>
+    <form method="POST" action="/inserir">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome"><br>
+        <label for="autor">Autor:</label>
+        <input type="text" name="autor"><br>
+        <label for="idade">Data:</label>
+        <input type="date" name="data"><br>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" name="quantidade"><br>
+        <input type="submit" value="inserir">
+    </form>
+
+    <h2>Listar Todos</h2>
+    <form method="POST" action="/listar_todos">
+        <input type="submit" value="Listar Todos">
+    </form>
+
+    <h2>Listar Por Id</h2>
+    <form method="POST" action="/listar">
+        <label for="id">Informe o Id: </label>
+        <input type="number" name="id"><br>
+        <button type="submit">Buscar Por Id</button>
+    </form>
+
+</body>
+</html>

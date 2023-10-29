@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Atualizar Livro Id={{livro.id}}</h1>
+    <form method="POST">
+        <label for="novo_nome">Novo Nome do Livro:</label>
+        <input type="text" name="novo_nome" value="{{ livro.NomeLivro }}"><br>
+        <label for="novo_autor">Novo Autor:</label>
+        <input type="text" name="novo_autor" value="{{ livro.AutorLivro }}"><br>
+        <label for="nova_data">Nova Data de Publicação:</label>
+        <input type="date" name="nova_data" value="{{ livro.DataPublicacao }}"><br>
+        <label for="nova_quantidade">Nova Quantidade:</label>
+        <input type="number" name="nova_quantidade" value="{{ livro.QuantidadeLivro }}"><br>
+        <input type="submit" value="Atualizar">
+    </form>
+    
+</body>
+</html>
