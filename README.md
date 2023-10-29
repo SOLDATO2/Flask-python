@@ -11,6 +11,14 @@ O projeto inclui um CRUD completo para 1 tabela denominada Livro. Todos os param
 
 Para atualizar um livro, basta primeiro registrar o livro e então, listar o livro por ID ou listar todos e seguidamente, clique em ATUALIZAR para modificar os parametros.
 
+# Parametros
+
+- id 
+- NomeLivro 
+- AutorLivro
+- DataPublicacao 
+- QuantidadeLivro 
+
 # Recursos utilizados
 
 
